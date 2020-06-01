@@ -1,6 +1,14 @@
-<div id="sub1" onmouseover="javascript:alert('Hey, I told you not to hover over me!');">
-    Don't hover over me</div>
-<div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="sub1" onmouseover="javascript:alert('Hey, I told you not to hover over me!');">
+    Don't hover over me
+  </div>
+  <div>
     <button class="js-button default-button" data-description="I'm right" 
     onclick="myFunction(this)">Button One </button>
 
@@ -8,43 +16,8 @@
     onclick="myFunction(this)">Button Two</button>
   </div>
 
-  <div id="js-description" class="description">
-  </div>
+  <div id="js-description" class="description"></div>
 
-  
-  
-  <script>
-  function myFunction(elem) {
-    var x = document.getElementById("js-description");
-    var description = elem.getAttribute('data-description');
-    x.innerHTML = description;
-    
-    var button = document.getElementsByClassName('js-button');
-    
-    for (var i = 0; i < button.length; i++) {
-      button[i].classList.remove('active-button');
-    }
-    
-    elem.classList.add('active-button');
-  }
-  </script>
-  
-  <style>
-    .default-button{
-      font-size:16px;
-      border-radius: 4px;
-      padding:7px 12px;
-    }
-    .active-button{
-      background:lavender;
-      color:purple;
-    }
-    .description{
-      margin-top:20px;
-    }
-#sub1{
-        font-size: 30px;
-        padding-bottom: 60px;
-        text-align: left;
-    }
-  </style>
+  <script type="text/javascript" src="reham-script.js"></script>
+</body>
+</html>
