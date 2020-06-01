@@ -1,4 +1,5 @@
-
+<div id="sub1" onmouseover="javascript:alert('Hey, I told you not to hover over me!');">
+    Don't hover over me</div>
 <div>
     <button class="js-button default-button" data-description="I'm right" 
     onclick="myFunction(this)">Button One </button>
@@ -9,6 +10,8 @@
   
   <div id="js-description" class="description">
   </div>
+
+  
   
   <script>
   function myFunction(elem) {
@@ -38,5 +41,10 @@
     }
     .description{
       margin-top:20px;
+    }
+#sub1{
+        font-size: 30px;
+        padding-bottom: 30px;
+        text-align: left;
     }
   </style>
